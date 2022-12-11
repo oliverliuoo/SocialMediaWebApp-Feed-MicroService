@@ -34,11 +34,6 @@ class User:
         pass
 
     @staticmethod
-    def get_user_followers(user_id: str) -> List[str]:
-        # TODO: call user service to get follower list.
-        return []
-
-    @staticmethod
     def get_user_followings(user_id: str) -> List[str]:
         url = config.user_service_host + '/followings/{}'.format(user_id)
         try:
